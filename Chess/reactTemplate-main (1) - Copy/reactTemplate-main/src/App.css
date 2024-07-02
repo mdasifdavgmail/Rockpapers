@@ -1,21 +1,68 @@
-/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
 .app {
   text-align: center;
-  margin-top: 50px;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .choices {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .choices button {
-  margin: 5px;
-  padding: 10px 20px;
-  font-size: 18px;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
 }
 
-.result {
-  margin-top: 20px;
-  font-size: 24px;
+.choices button:hover {
+  background-color: #0056b3;
+}
+
+.result p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .choices {
+    flex-direction: column;
+  }
+
+  .choices button {
+    margin: 0.5rem 0;
+    width: 100%;
+  }
 }
